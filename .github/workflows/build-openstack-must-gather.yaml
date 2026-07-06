@@ -5,6 +5,9 @@ on:
     branches:
       - '*'
 
+permissions:
+  contents: read
+
 env:
   imageregistry: 'quay.io'
   imagenamespace: ${{ secrets.IMAGENAMESPACE || secrets.QUAY_USERNAME }}
